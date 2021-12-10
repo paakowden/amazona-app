@@ -17,7 +17,7 @@ const data = {
   ],
   products: [
     {
-      _id: "1",
+      //_id: "1",
       name: "Nike Slim Shirt",
       category: "Shirts",
       image: "/images/p1.jpg",
@@ -29,7 +29,7 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "2",
+      // _id: "2",
       name: "Adidas Fit Shirt",
       category: "Shirts",
       image: "/images/p2.jpg",
@@ -41,7 +41,7 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "3",
+      // _id: "3",
       name: "Lacoste Free Shirt",
       category: "Shirts",
       image: "/images/p3.jpg",
@@ -53,7 +53,7 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "4",
+      // _id: "4",
       name: "Nike Slim Pant",
       category: "Pants",
       image: "/images/p4.jpg",
@@ -65,7 +65,7 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "5",
+      // _id: "5",
       name: "Puma Slim Pant",
       category: "Pants",
       image: "/images/p5.jpg",
@@ -77,7 +77,7 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "6",
+      //_id: "6",
       name: "Adidas Fit Pant",
       category: "Pants",
       image: "/images/p6.jpg",
@@ -89,7 +89,7 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "7",
+      // _id: "7",
       name: "Lacoste Fit Pant",
       category: "Pants",
       image: "/images/p7.jpg",
@@ -101,8 +101,8 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "8",
-      name: "Adidas Fit Pant",
+      //_id: "8",
+      name: "Adidas Fit Shorts",
       category: "Pants",
       image: "/images/p8.jpg",
       price: 3000,
