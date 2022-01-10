@@ -17,6 +17,7 @@ import RegisterScreen from "./screens/RegisterScreen";
 import ShippingAddressScreen from "./screens/ShippingAddressScreen";
 import SigninScreen from "./screens/SigninScreen";
 import ProductEditScreen from "./screens/ProductEditScreen";
+import OrderListScreen from "./screens/OrderListScreen";
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -108,6 +109,10 @@ function App() {
           <AdminRoute
             path="/productlist"
             compenent={ProductListScreen}
+          ></AdminRoute>
+          <AdminRoute
+            path="/orderlist"
+            compenent={OrderListScreen}
           ></AdminRoute>
           <Route exact path="/" component={HomeScreen} />
         </main>
