@@ -20,7 +20,7 @@ const PayStackPayment = ({ amount, email, orderId }) => {
   const config = {
     reference: new Date().getTime(),
     email: "kevteden14@gmail.com",
-    amount: 100,
+    amount: amount * 100, //parseInt(amount) * 100,
     publicKey: "pk_test_3643e779f9170e353c8bd4e621a29ff2d8c13f8d",
   };
 
