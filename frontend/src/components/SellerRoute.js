@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Redirect, Route } from "react-router-dom";
 
-function AdminRoute({ compenent: Component, ...rest }) {
+function SellerRoute({ compenent: Component, ...rest }) {
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
 
@@ -10,7 +10,7 @@ function AdminRoute({ compenent: Component, ...rest }) {
     <Route
       {...rest}
       render={(props) =>
-        userInfo && userInfo.isAdmin ? (
+        userInfo && userInfo.isSeller ? (
           <Component {...props}></Component>
         ) : (
           <Redirect to="/signin" />
@@ -19,4 +19,4 @@ function AdminRoute({ compenent: Component, ...rest }) {
     ></Route>
   );
 }
-export default AdminRoute;
+export default SellerRoute;
