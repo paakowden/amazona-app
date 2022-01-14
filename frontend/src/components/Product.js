@@ -11,7 +11,7 @@ function Product(props) {
           className="medium"
           src={product.image}
           alt={product.name}
-          style={{ width: "850px", height: "400px" }}
+          style={{ width: "800px", height: "400px" }}
         />
       </Link>
       <div className="card-body">
