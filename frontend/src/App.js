@@ -157,22 +157,6 @@ function App() {
                 <i className="fa fa-close"></i>
               </button>
             </li>
-            {loadingCategories ? (
-              <LoadingBox />
-            ) : errorCategories ? (
-              <MessageBox variant="danger">{errorCategories}</MessageBox>
-            ) : (
-              categories.map((category) => (
-                <li key={category}>
-                  <Link
-                    to={`/search/category/${category}`}
-                    onClick={() => setSidebarIsOpen(false)}
-                  >
-                    {category}
-                  </Link>
-                </li>
-              ))
-            )}
           </ul>
         </aside>
         <main>
@@ -199,6 +183,11 @@ function App() {
           ></Route>
           <Route
             path="/search/category/:category/name/:name"
+            component={SearchScreen}
+            exact
+          ></Route>
+          <Route
+            path="/search/category/:category/name/:name/min/:min/max/:max/rating/:rating/order/:order"
             component={SearchScreen}
             exact
           ></Route>
