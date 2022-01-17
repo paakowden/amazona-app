@@ -25,6 +25,7 @@ import SellerScreen from "./screens/SellerScreen";
 import SearchBox from "./components/SearchBox";
 import SearchScreen from "./screens/SearchScreen";
 import { listProductCategories } from "./actions/productActions";
+import MapScreen from "./screens/MapScreen";
 //import LoadingBox from "./components/LoadingBox";
 //import MessageBox from "./components/MessageBox";
 
@@ -195,6 +196,7 @@ function App() {
             path="/profile"
             compenent={ProfileScreen}
           ></PrivateRoute>
+          <PrivateRoute path="/map" compenent={MapScreen}></PrivateRoute>
           <AdminRoute
             path="/productlist"
             compenent={ProductListScreen}
