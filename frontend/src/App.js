@@ -25,8 +25,8 @@ import SellerScreen from "./screens/SellerScreen";
 import SearchBox from "./components/SearchBox";
 import SearchScreen from "./screens/SearchScreen";
 import { listProductCategories } from "./actions/productActions";
-import LoadingBox from "./components/LoadingBox";
-import MessageBox from "./components/MessageBox";
+//import LoadingBox from "./components/LoadingBox";
+//import MessageBox from "./components/MessageBox";
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -42,14 +42,14 @@ function App() {
   const signoutHandler = () => {
     dispatch(signout());
   };
-
+  /*
   const productCategoryList = useSelector((state) => state.productCategoryList);
   const {
     loading: loadingCategories,
     error: errorCategories,
     categories,
   } = productCategoryList;
-
+*/
   //console.log(categories);
 
   useEffect(() => {
