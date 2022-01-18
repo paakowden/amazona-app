@@ -188,7 +188,7 @@ function App() {
             exact
           ></Route>
           <Route
-            path="/search/category/:category/name/:name/min/:min/max/:max/rating/:rating/order/:order"
+            path="/search/category/:category/name/:name/min/:min/max/:max/rating/:rating/order/:order/pageNumber/:pageNumber"
             component={SearchScreen}
             exact
           ></Route>
@@ -199,6 +199,11 @@ function App() {
           <PrivateRoute path="/map" compenent={MapScreen}></PrivateRoute>
           <AdminRoute
             path="/productlist"
+            compenent={ProductListScreen}
+            exact
+          ></AdminRoute>
+          <AdminRoute
+            path="/productlist/pageNumber/:pageNumber"
             compenent={ProductListScreen}
             exact
           ></AdminRoute>
